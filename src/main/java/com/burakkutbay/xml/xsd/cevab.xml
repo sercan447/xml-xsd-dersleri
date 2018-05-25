@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shiporder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="cevab.xsd"
+           orderid="548">
+    
+    <orderperson> Sercan METE </orderperson>
+    <shipto>
+        <name>Hibernate</name>
+        <address>JSP</address>
+        <city>JAXB</city>
+        <country>JPA</country>
+    </shipto>
+    
+    <item>
+        <title>NORVEC</title>
+        <note>ISVICRE</note>
+        <quantity>HOLLANDA</quantity>
+        <price>48</price>
+    </item>
+    
+    <item>
+        <title>JSF</title>
+        <quantity>Spring Framework</quantity>
+        <price>9</price>
+    </item>
+    
+    
+</shiporder>

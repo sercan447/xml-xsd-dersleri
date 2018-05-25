@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.restoranduragi.com/ogrenciler"
+    xmlns:tns="http://www.example.org/ogrenciler"
+               elementFromDefault="unqualified">
+    
+        <complexType name="adrestipi">
+            <sequence>
+                <element name="sehir" type="string" ></element>
+                <element name="cadde" type="string"></element>
+                <element name="mahalle" type="string"></element>
+            </sequence>
+        </complexType>
+        
+        <complexType name="derstipi">
+            <sequence>
+                <element name="kod" type="integer"></element>
+                <element name="ad" type="string"></element>     
+            </sequence>
+        </complexType>
+    
+        <complexType name="derslertipi">
+            <sequence>
+                <element name="ders" type="tns:derstipi" minOccurs="1" maxOccurs="unbounded" ></element>
+            </sequence>
+        </complexType>
+        
+        
+        <complexType name="ogrencitipi">
+            <sequence>
+                <element name="isim" type="string" minOccurs="1" maxOccurs="1" ></element>
+                <element name="soyad" type="string" minOccurs="1" maxOccurs="1"></element>
+                <element name="adres" type="tns:adrestipi"></element>
+                <element name="dersler" type="tns:derslertipi"></element>
+            </sequence>
+            <attribute name="no" type="int" ></attribute>
+        </complexType>
+    
+    
+        <complexType name="ogrencilerTipi">
+            <sequence>
+                <element name="ogrenci" type="tns:ogrencitipi" minOccurs="1" ></element>
+            </sequence>
+        </complexType>
+    
+        <element name="ogrenciler" type="tns:ogrencilerTipi"></element>
+            
+    
+    
+    </schema>

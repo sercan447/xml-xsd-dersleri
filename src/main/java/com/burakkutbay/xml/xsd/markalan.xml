@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:ogrenciler
+xmlns:tns="http://www.restoranduragi.com/ogrenciler"
+xmlns:xsi="http://www.w3.org/XMLSchema-instance"
+xsi:schemaLocation="http://www.example.org/ogrenciler marka.xsd">
+    <ogrenci no="5">
+            <ad>SERCAN</ad>
+            <soyad>YERGOK</soyad>
+
+            <adres>
+                <sehir>AYDIN</sehir>
+                <cadde>NAZILLI</cadde>
+                <mahalle>TURGUT REIS</mahalle>
+            </adres>
+
+            <dersler>
+                <ders>
+                    <kod>48934</kod>
+                    <ad>JAVA EE</ad>
+                </ders>
+            </dersler>
+    </ogrenci>
+</tns:ogrenciler>
